@@ -1,0 +1,111 @@
+@import url("https://fonts.google.com/specimen/Montserrat");
+@import url("https://fonts.google.com/specimen/Fraunces");
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-gratish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+  width: 350px;
+  border-radius: 10px 0 0 10px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-box {
+  width: 700px;
+  height: 525px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+}
+.picture {
+  width: 50%;
+  height: 100%;
+}
+.mobile {
+  display: none;
+}
+.preview-container {
+  width: 50%;
+  padding: 2.3rem;
+}
+.preview-head {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--dark-gratish-blue);
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+  color: var(--very-dark-blue);
+  margin: 1rem 0;
+}
+.preview-description {
+  color: var(--dark-gratish-blue);
+  line-height: 1.4;
+}
+.price {
+  width: 80%;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--dark-cyan);
+}
+.sale {
+  font-weight: 500;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+.real {
+  text-decoration: line-through;
+}
+.buy-buttom {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  width: fit-content;
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buy-buttom svg {
+  margin-right: 2px;
+}
+.buy-buttom:hover {
+  background-color: #f64f59;
+  color: var(--white);
+}
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  font-size: 15px;
+}
+footer a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: var(--dark-cyan);
+}
+footer a:hover {
+  color: #f64f59;
+}
